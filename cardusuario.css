@@ -1,0 +1,122 @@
+/* Design Desktop */
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.parrafo {
+  text-align: center;
+  padding: 0px 40px;
+  font-size: 18px;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan {
+  display: flex;
+  background-color: hsl(225, 100%, 98%);
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 10px;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.payment {
+  width: 80%;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border: none;
+  margin-top: 20px;
+  font-family: "Red Hat Display";
+}
+
+.cancel {
+  font-weight: bold;
+  height: 3rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.payment:hover {
+  cursor: pointer;
+  background-color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
+
+.change:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Design Mobile */
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .card {
+    width: 85%;
+  }
+
+  .plan {
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 23px;
+  }
+
+  .parrafo {
+    font-size: 14px;
+    padding: 0px 18px;
+  }
+
+  .plan-precio {
+    font-size: 14px;
+  }
+
+  .change {
+    font-size: 14px;
+  }
+
+  .cancel {
+    font-size: 14px;
+  }
+}
