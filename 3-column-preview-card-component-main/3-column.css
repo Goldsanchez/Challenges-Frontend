@@ -1,0 +1,135 @@
+.body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+.cards {
+    display: flex;
+    width: 600px;
+    
+    
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+
+
+.card-left {
+    background-color: hsl(31, 77%, 52%);
+    padding: 25px 25px 40px 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-center {
+    background-color: hsl(184, 100%, 22%);
+    padding: 25px 25px 40px 25px;
+}
+
+.card-right {
+    background-color: hsl(179, 100%, 13%);
+    padding: 25px 25px 40px 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-parrafo {
+    margin-bottom: 50px;
+}
+
+.card-link {
+    background-color: hsl(0, 0%, 95%);    
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+  
+}
+
+.card-link-left:hover {
+    border:hsl(0, 0%, 95%);
+    border-style: solid;
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+.card-link-center:hover {
+    border:hsl(0, 0%, 95%);
+    border-style: solid;
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+.card-link-right:hover {
+    border:hsl(0, 0%, 95%);
+    border-style: solid;
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+.a-color-left {
+    color:hsl(31, 77%, 52%);
+}
+.a-color-center {
+    color:hsl(184, 100%, 22%);
+}
+.a-color-right {
+    color:hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 625px) {
+    .body {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        font-family: 'Lexend Deca', sans-serif;
+        color: hsl(0, 0%, 95%);
+        font-size: 15px;
+       
+    }
+    
+    .cards {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 4rem 0;
+     
+
+    }
+
+    .card-left {
+        background-color: hsl(31, 77%, 52%);
+        padding: 35px 35px 35px 35px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        
+    }
+    
+    .card-center {
+        background-color: hsl(184, 100%, 22%);
+        padding: 35px 35px 35px 35px;
+        
+    }
+    
+    .card-right {
+        background-color: hsl(179, 100%, 13%);
+        padding: 35px 35px 35px 35px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+  }
